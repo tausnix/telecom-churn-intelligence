@@ -25,6 +25,11 @@ https://share.streamlit.io/deploy?repository=tausnix/telecom-churn-intelligence&
 Opening it while signed in skips the repository/branch/file form and takes you straight to
 the confirmation screen.
 
+> **Subdomain note:** the obvious `telecom-churn-intelligence` subdomain is already taken by
+> an unrelated app, so Streamlit Cloud will reject it. `tausnix-churn-intelligence` is
+> verified free and is the recommended choice below.
+
+
 ## Manual steps
 
 1. Open <https://share.streamlit.io> and click **Continue to sign-in** → **GitHub**.
@@ -37,7 +42,7 @@ the confirmation screen.
    | Repository | `tausnix/telecom-churn-intelligence` |
    | Branch | `main` |
    | Main file path | `app.py` |
-   | App URL (Advanced) | `telecom-churn-intelligence` |
+   | App URL (Advanced) | `tausnix-churn-intelligence` |
 
 4. Open **Advanced settings** → set **Python version** to **3.12** (the Cloud default).
    Leave *Secrets* empty — the app needs none.
@@ -47,7 +52,7 @@ the confirmation screen.
 Resulting URL:
 
 ```text
-https://telecom-churn-intelligence.streamlit.app
+https://tausnix-churn-intelligence.streamlit.app
 ```
 
 ## Verify after deploy
