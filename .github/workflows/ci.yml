@@ -32,8 +32,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          # Pinned to the version that produced the committed model artefacts.
-          pip install "scikit-learn==1.9.1"
 
       - name: Byte-compile all sources
         run: python -m compileall -q app.py run_pipeline.py src scripts

@@ -149,6 +149,19 @@ python -m src.predict --json examples/sample_customer.json --model "Logistic Reg
 
 ---
 
+### ☁️ Deploy your own live demo
+
+[![Deploy to Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=tausnix/telecom-churn-intelligence&branch=main&mainModule=app.py)
+
+The badge opens a **pre-filled** Streamlit Community Cloud deploy for this repository —
+sign in with GitHub, confirm the branch (`main`) and file (`app.py`), and it builds in a few
+minutes. No secrets are required, and the committed models mean nothing needs training.
+
+Step-by-step guide, expected URL and troubleshooting:
+[`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
+
+---
+
 ## 🖥️ App tour
 
 The Streamlit app has three tabs.
@@ -222,6 +235,7 @@ telecom-churn-intelligence/
 │   ├── download_data.py       # optional dataset re-download
 │   └── smoke_test.py          # model health check
 ├── docs/
+│   ├── DEPLOYMENT.md          # Streamlit Cloud deployment guide
 │   └── screenshots/           # app screenshots used in this README
 └── reports/
     ├── figures/               # 15 presentation-ready charts
