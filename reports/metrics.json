@@ -1,0 +1,345 @@
+{
+  "dataset": {
+    "n_rows": 7043,
+    "raw_columns": 21,
+    "n_features": 28,
+    "churn_rate": 0.2653698707936959,
+    "churned_customers": 1869,
+    "retained_customers": 5174,
+    "source": "IBM Telco Customer Churn",
+    "train_rows": 5634,
+    "test_rows": 1409,
+    "train_churn_rate": 0.2653532126375577,
+    "test_churn_rate": 0.2654364797728886,
+    "encoded_features": 59
+  },
+  "cleaning": {
+    "raw_rows": 7043,
+    "raw_columns": 21,
+    "duplicate_rows_removed": 0,
+    "missing_values_before": 0,
+    "missing_total_charges": 11,
+    "total_charges_imputed": 11,
+    "imputation_rule": "TotalCharges blank -> MonthlyCharges * tenure",
+    "missing_target_rows_removed": 0,
+    "invalid_tenure_rows": 0,
+    "negative_charge_rows": 0,
+    "clean_rows": 7043,
+    "clean_columns": 21,
+    "missing_values_after": 0,
+    "churn_rate": 0.2653698707936959,
+    "churned_customers": 1869,
+    "retained_customers": 5174
+  },
+  "eda": {
+    "customers": 7043,
+    "churned_customers": 1869,
+    "retained_customers": 5174,
+    "churn_rate": 0.2653698707936959,
+    "avg_tenure_churned": 17.979133226324237,
+    "avg_tenure_retained": 37.56996521066873,
+    "median_tenure_churned": 10.0,
+    "median_tenure_retained": 38.0,
+    "avg_monthly_churned": 74.44133226324237,
+    "avg_monthly_retained": 61.26512369540008,
+    "contract": [
+      {
+        "Contract": "Month-to-month",
+        "customers": 3875,
+        "churn_rate": 0.4270967741935484,
+        "churn_rate_pct": 42.70967741935484
+      },
+      {
+        "Contract": "One year",
+        "customers": 1473,
+        "churn_rate": 0.11269517990495587,
+        "churn_rate_pct": 11.269517990495586
+      },
+      {
+        "Contract": "Two year",
+        "customers": 1695,
+        "churn_rate": 0.02831858407079646,
+        "churn_rate_pct": 2.831858407079646
+      }
+    ],
+    "internet": [
+      {
+        "InternetService": "DSL",
+        "customers": 2421,
+        "churn_rate": 0.1895910780669145,
+        "churn_rate_pct": 18.95910780669145
+      },
+      {
+        "InternetService": "Fiber optic",
+        "customers": 3096,
+        "churn_rate": 0.4189276485788114,
+        "churn_rate_pct": 41.89276485788114
+      },
+      {
+        "InternetService": "No",
+        "customers": 1526,
+        "churn_rate": 0.07404980340760157,
+        "churn_rate_pct": 7.404980340760157
+      }
+    ],
+    "payment": [
+      {
+        "PaymentMethod": "Electronic check",
+        "customers": 2365,
+        "churn_rate": 0.4528541226215645,
+        "churn_rate_pct": 45.28541226215645
+      },
+      {
+        "PaymentMethod": "Mailed check",
+        "customers": 1612,
+        "churn_rate": 0.19106699751861042,
+        "churn_rate_pct": 19.106699751861044
+      },
+      {
+        "PaymentMethod": "Bank transfer (automatic)",
+        "customers": 1544,
+        "churn_rate": 0.16709844559585493,
+        "churn_rate_pct": 16.709844559585495
+      },
+      {
+        "PaymentMethod": "Credit card (automatic)",
+        "customers": 1522,
+        "churn_rate": 0.15243101182654403,
+        "churn_rate_pct": 15.243101182654403
+      }
+    ],
+    "tenure_group": [
+      {
+        "TenureGroup": "0-12 months",
+        "customers": 2186,
+        "churn_rate": 0.47438243366880145,
+        "churn_rate_pct": 47.438243366880144
+      },
+      {
+        "TenureGroup": "13-24 months",
+        "customers": 1024,
+        "churn_rate": 0.287109375,
+        "churn_rate_pct": 28.7109375
+      },
+      {
+        "TenureGroup": "25-48 months",
+        "customers": 1594,
+        "churn_rate": 0.2038895859473024,
+        "churn_rate_pct": 20.388958594730237
+      },
+      {
+        "TenureGroup": "49-72 months",
+        "customers": 2239,
+        "churn_rate": 0.09513175524787852,
+        "churn_rate_pct": 9.513175524787853
+      }
+    ],
+    "services": [
+      {
+        "NumServices": 0,
+        "customers": 80,
+        "churn_rate": 0.4375,
+        "churn_rate_pct": 43.75
+      },
+      {
+        "NumServices": 1,
+        "customers": 1701,
+        "churn_rate": 0.21105232216343328,
+        "churn_rate_pct": 21.105232216343328
+      },
+      {
+        "NumServices": 2,
+        "customers": 1188,
+        "churn_rate": 0.3282828282828283,
+        "churn_rate_pct": 32.82828282828283
+      },
+      {
+        "NumServices": 3,
+        "customers": 965,
+        "churn_rate": 0.36476683937823834,
+        "churn_rate_pct": 36.476683937823836
+      },
+      {
+        "NumServices": 4,
+        "customers": 922,
+        "churn_rate": 0.31344902386117135,
+        "churn_rate_pct": 31.344902386117134
+      },
+      {
+        "NumServices": 5,
+        "customers": 908,
+        "churn_rate": 0.2555066079295154,
+        "churn_rate_pct": 25.55066079295154
+      },
+      {
+        "NumServices": 6,
+        "customers": 676,
+        "churn_rate": 0.22485207100591717,
+        "churn_rate_pct": 22.485207100591715
+      },
+      {
+        "NumServices": 7,
+        "customers": 395,
+        "churn_rate": 0.1240506329113924,
+        "churn_rate_pct": 12.40506329113924
+      },
+      {
+        "NumServices": 8,
+        "customers": 208,
+        "churn_rate": 0.052884615384615384,
+        "churn_rate_pct": 5.288461538461538
+      }
+    ],
+    "top_positive_correlations": [
+      {
+        "feature": "MonthlyCharges",
+        "correlation": 0.19335642223784716
+      },
+      {
+        "feature": "AvgMonthlyCharges",
+        "correlation": 0.19329977567500484
+      },
+      {
+        "feature": "SeniorCitizen",
+        "correlation": 0.15088932817647233
+      }
+    ],
+    "top_negative_correlations": [
+      {
+        "feature": "tenure",
+        "correlation": -0.35222867011307885
+      },
+      {
+        "feature": "TotalCharges",
+        "correlation": -0.1983242626039948
+      },
+      {
+        "feature": "FamilySize",
+        "correlation": -0.18419285568941623
+      }
+    ]
+  },
+  "model_comparison": [
+    {
+      "Model": "Logistic Regression",
+      "CV ROC AUC": 0.8471319979593444,
+      "CV F1": 0.6267915033170489,
+      "CV Recall": 0.7879598662207358,
+      "Test Accuracy": 0.7416607523066004,
+      "Test Precision": 0.5085616438356164,
+      "Test Recall": 0.7941176470588235,
+      "Test F1": 0.6200417536534447,
+      "Test ROC AUC": 0.8452607920638612,
+      "Test PR AUC": 0.6530286903576962,
+      "Best Params": "{'C': 0.1}",
+      "Fit Seconds": 11.7
+    },
+    {
+      "Model": "Random Forest",
+      "CV ROC AUC": 0.844505092466499,
+      "CV F1": 0.6320907143372174,
+      "CV Recall": 0.7123745819397993,
+      "Test Accuracy": 0.7700496806245565,
+      "Test Precision": 0.5508130081300813,
+      "Test Recall": 0.7245989304812834,
+      "Test F1": 0.625866050808314,
+      "Test ROC AUC": 0.8422511560618978,
+      "Test PR AUC": 0.6546334137020617,
+      "Best Params": "{'max_depth': 12, 'min_samples_leaf': 4}",
+      "Fit Seconds": 25.8
+    },
+    {
+      "Model": "Support Vector Machine",
+      "CV ROC AUC": 0.8323584519845861,
+      "CV F1": 0.6271361341860184,
+      "CV Recall": 0.7832775919732441,
+      "Test Accuracy": 0.7849538679914834,
+      "Test Precision": 0.5889724310776943,
+      "Test Recall": 0.6283422459893048,
+      "Test F1": 0.6080206985769728,
+      "Test ROC AUC": 0.8326435712624971,
+      "Test PR AUC": 0.6366770255747829,
+      "Best Params": "{'C': 0.5, 'gamma': 'scale'}",
+      "Fit Seconds": 93.9
+    }
+  ],
+  "best_model": "Random Forest",
+  "operating_threshold": 0.395,
+  "best_model_test_metrics_default_threshold": {
+    "threshold": 0.5,
+    "accuracy": 0.7700496806245565,
+    "precision": 0.5508130081300813,
+    "recall": 0.7245989304812834,
+    "f1": 0.625866050808314,
+    "roc_auc": 0.8422511560618978,
+    "pr_auc": 0.6546334137020617,
+    "true_negatives": 814,
+    "false_positives": 221,
+    "false_negatives": 103,
+    "true_positives": 271,
+    "n_samples": 1409
+  },
+  "best_model_test_metrics_tuned_threshold": {
+    "threshold": 0.395,
+    "accuracy": 0.751596877217885,
+    "precision": 0.5205479452054794,
+    "recall": 0.8128342245989305,
+    "f1": 0.6346555323590815,
+    "roc_auc": 0.8422511560618978,
+    "pr_auc": 0.6546334137020617,
+    "true_negatives": 755,
+    "false_positives": 280,
+    "false_negatives": 70,
+    "true_positives": 304,
+    "n_samples": 1409
+  },
+  "cv_metrics": {
+    "Logistic Regression": {
+      "roc_auc": {
+        "mean": 0.8471319979593444,
+        "std": 0.010727122282283114
+      },
+      "f1": {
+        "mean": 0.6267915033170489,
+        "std": 0.021870784279260026
+      },
+      "recall": {
+        "mean": 0.7879598662207358,
+        "std": 0.03517911382556444
+      }
+    },
+    "Support Vector Machine": {
+      "roc_auc": {
+        "mean": 0.8323584519845861,
+        "std": 0.010822859517489661
+      },
+      "f1": {
+        "mean": 0.6271361341860184,
+        "std": 0.021277376373656055
+      },
+      "recall": {
+        "mean": 0.7832775919732441,
+        "std": 0.038911142668224714
+      }
+    },
+    "Random Forest": {
+      "roc_auc": {
+        "mean": 0.844505092466499,
+        "std": 0.008991099446127698
+      },
+      "f1": {
+        "mean": 0.6320907143372174,
+        "std": 0.023461887564017354
+      },
+      "recall": {
+        "mean": 0.7123745819397993,
+        "std": 0.03663696036823851
+      }
+    }
+  },
+  "runtime": {
+    "Logistic Regression": 11.7,
+    "Random Forest": 25.8,
+    "Support Vector Machine": 93.9
+  }
+}

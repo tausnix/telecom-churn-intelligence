@@ -1,0 +1,60 @@
+feature,coefficient
+Contract_Month-to-month,0.7220719115488325
+InternetService_Fiber optic,0.3957481081521778
+IsNewCustomer_Yes,0.32245991748933106
+PaymentMethod_Electronic check,0.27686904691331327
+OnlineSecurity_No,0.18375189064707728
+PaperlessBilling_Yes,0.1725262277615371
+StreamingServices,0.1553379310172886
+TechSupport_No,0.15347831237786064
+TenureGroup_0-12 months,0.1271163996399045
+MultipleLines_No phone service,0.1117713510163732
+PhoneService_No,0.1117713510163732
+AvgMonthlyCharges,0.107799616797721
+MonthlyCharges,0.10619251785082146
+MultipleLines_Yes,0.08568395293125687
+Dependents_No,0.07593764929573237
+OnlineBackup_No,0.0725154982013927
+StreamingMovies_Yes,0.07027534515418994
+HasInternet_Yes,0.06610109504294376
+SeniorCitizen,0.06310472016701342
+DeviceProtection_Yes,0.06255939942358783
+StreamingTV_Yes,0.06021195671902792
+TenureGroup_49-72 months,0.043778092627291786
+Partner_Yes,0.04062911721161295
+Contract_One year,0.01625517478049111
+gender_Male,0.014465129545929689
+StreamingTV_No,0.005889138323914914
+DeviceProtection_No,0.003541695619355169
+StreamingMovies_No,-0.004174250111246373
+OnlineBackup_Yes,-0.006414403158449261
+gender_Female,-0.01746303154412804
+NumServices,-0.0180298506046716
+MonthlyChargeDelta,-0.021104660704385787
+TotalCharges,-0.03434349514448189
+Partner_No,-0.043627019209804156
+FamilySize,-0.04416530555507068
+TenureGroup_13-24 months,-0.06087394244496102
+OnlineSecurity_No internet service,-0.06909899704113852
+HasInternet_No,-0.06909899704113852
+StreamingMovies_No internet service,-0.06909899704113852
+DeviceProtection_No internet service,-0.06909899704113852
+OnlineBackup_No internet service,-0.06909899704113852
+StreamingTV_No internet service,-0.06909899704113852
+InternetService_No,-0.06909899704113852
+TechSupport_No internet service,-0.06909899704113852
+Dependents_Yes,-0.0789355512939239
+PaymentMethod_Mailed check,-0.08712345985373779
+TechSupport_Yes,-0.08737721733491564
+PaymentMethod_Credit card (automatic),-0.09189866138125187
+PaymentMethod_Bank transfer (automatic),-0.10084482767651488
+SupportServices,-0.11261062006574256
+TenureGroup_25-48 months,-0.11301845182043109
+PhoneService_Yes,-0.11476925301456893
+OnlineSecurity_Yes,-0.11765079560412771
+PaperlessBilling_No,-0.17552412975971834
+MultipleLines_No,-0.20045320594582602
+IsNewCustomer_No,-0.3254578194875273
+InternetService_DSL,-0.3296470131092293
+tenure,-0.4987285355117903
+Contract_Two year,-0.741324988327511
