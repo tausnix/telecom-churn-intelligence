@@ -7,9 +7,9 @@ reproducible scikit-learn pipeline and an interactive Streamlit app.**
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5%2B-F7931E?logo=scikitlearn&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.50%2B-FF4B4B?logo=streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-0F766E)
-![CI](https://github.com/tausnix/telecom-churn-intelligence/actions/workflows/ci.yml/badge.svg)
 ![ROC-AUC](https://img.shields.io/badge/ROC--AUC-0.842-0E7490)
 ![Recall](https://img.shields.io/badge/Recall-81.3%25-E76F51)
+![Live demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
 
 ![Telecom churn app](docs/screenshots/01-score-tab.jpeg)
 
