@@ -12,4 +12,8 @@ toolbarMode = "minimal"
 gatherUsageStats = false
 
 [server]
-headless = false
+# Must stay true: in non-headless mode Streamlit blocks on an interactive
+# "Enter your email" prompt when no credentials file exists (Streamlit Cloud
+# has none), so the process never binds its port and the deploy fails with
+# "Error running app.".
+headless = true

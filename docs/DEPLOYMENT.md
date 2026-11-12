@@ -66,8 +66,10 @@ https://tausnix-churn-intelligence.streamlit.app
 
 | Symptom | Cause / fix |
 |---|---|
+| **`Error running app.`** with `👋 Welcome to Streamlit!` → `Email:` in the logs, then `connection refused` on port 8501 | `headless` was `false` in `.streamlit/config.toml`. Without a credentials file (Cloud has none) Streamlit blocks on an interactive email prompt and never binds its port. Keep `headless = true` — it is the committed default. |
 | `ModuleNotFoundError: No module named 'src'` | Main file path must be `app.py` at the repo root, not a file inside `src/`. |
-| `InconsistentVersionWarning` when loading a model | Dependencies drifted from the training environment. `requirements.txt` pins `scikit-learn` to the 1.9 line; rebuild the app after changing dependencies. |
+| `InconsistentVersionWarning` when loading a model | Dependencies drifted from the training environment. `requirements.txt` pins the exact versions (`pandas`, `numpy`, `scikit-learn`, `streamlit`, `matplotlib`, `seaborn`); rebuild the app after changing dependencies. |
+| Build log shows `Detected pyarrow … Replacing with pyarrow<25` | Streamlit Cloud force-replaces `pyarrow>=25` (known segfault, apache/arrow#50471). `requirements.txt` already pins `pyarrow>=24,<25` so the replacement happens during resolution instead of after install. |
 | Build fails installing a package | Open **Manage app → Logs** for the pip error, then adjust `requirements.txt`. |
 | App sleeps after inactivity | Expected on the free tier. Opening the URL wakes it (~10–30 s). |
 | Charts missing | `reports/figures/` must be committed — they are, but a `.gitignore` mis-edit could drop them. |

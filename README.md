@@ -190,12 +190,15 @@ Dataset overview, the full EDA gallery, cleaned-data preview and CSV download.
 
 ### Troubleshooting
 
-- **Command exits immediately / asks for an email** — Streamlit asks for an email on its first
-  run when not headless. Answer it once, or create `~/.streamlit/credentials.toml`:
+- **Command asks for an email** — Streamlit prompts on its first run when not headless. Answer
+  it once, or create `~/.streamlit/credentials.toml`:
   ```toml
   [general]
   email = ""
   ```
+  Note: `.streamlit/config.toml` sets `headless = true` on purpose. On Streamlit Cloud there is no
+  credentials file, so a non-headless server blocks on that prompt, never binds port 8501 and the
+  deploy fails with **`Error running app.`**
 - **Nothing opens in the browser** — copy the "Local URL" printed in the terminal into your
   browser. If the port is taken, Streamlit prints a different one.
 - **`ModuleNotFoundError: No module named 'src'`** — run commands from the project root, not
