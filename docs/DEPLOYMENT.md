@@ -72,6 +72,8 @@ https://tausnix-churn-intelligence.streamlit.app
 | `InconsistentVersionWarning` when loading a model | Dependencies drifted from the training environment. `requirements.txt` pins the exact versions (`pandas`, `numpy`, `scikit-learn`, `streamlit`, `matplotlib`, `seaborn`); rebuild the app after changing dependencies. |
 | Build log shows `Detected pyarrow … Replacing with pyarrow<25` | Streamlit Cloud force-replaces `pyarrow>=25` (known segfault, apache/arrow#50471). `requirements.txt` already pins `pyarrow>=24,<25` so the replacement happens during resolution instead of after install. |
 | Build fails with `No matching distribution found for numpy==2.5.4` | The interpreter is Python 3.11 or older; numpy 2.5.x only ships 3.12+ wheels. Set **Advanced settings → Python version** to **3.12** (matches `.python-version`). |
+| `/_stcore/health` returns the HTML wrapper, not `ok` | Expected. The app subdomain serves a Cloud wrapper page and the app itself runs in the `streamlitApp` iframe (`/~/+/`), so this endpoint is not a liveness check. Use **Manage app → Logs**: the app is up once the log shows `Uvicorn server started on :::8501` and `Updated app!`. |
+| Pushed a commit but the app still shows old code | Streamlit Cloud rebuilds on push, but a container stuck in a crashed state needs **Manage app → ⋯ → Reboot app**, then confirm in **Logs**. |
 | Build fails installing a package | Open **Manage app → Logs** for the pip error, then adjust `requirements.txt`. |
 | App sleeps after inactivity | Expected on the free tier. Opening the URL wakes it (~10–30 s). |
 | Charts missing | `reports/figures/` must be committed — they are, but a `.gitignore` mis-edit could drop them. |
