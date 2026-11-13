@@ -57,10 +57,11 @@ https://tausnix-churn-intelligence.streamlit.app
 
 ## Verify after deploy
 
-- The hero strip shows **7,043 customers · 3 tuned models · best Random Forest**.
-- **Score a customer** → *Predict churn risk* returns a probability, risk band and drivers.
-- **Model performance** → six metric cards plus the comparison table.
-- **Data insights** → EDA gallery and dataset download.
+- The header shows **churn./Intelligence** with the dataset stats line and the model selector.
+- **Score a customer** → *Predict churn risk* adds a row to the session log and opens the case
+  file on the right with the probability, band and drivers.
+- **Model performance** → six metric cards plus the comparison table and curves.
+- **Data insights** → overview metrics, EDA gallery and dataset download.
 
 ## Troubleshooting
 

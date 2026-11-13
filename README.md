@@ -164,14 +164,21 @@ Step-by-step guide, expected URL and troubleshooting:
 
 ## 🖥️ App tour
 
-The Streamlit app has three tabs.
+A single-page retention console in the same dark visual language as
+[PromoFinder](https://github.com/tausnix/kuku-promo-finder): a control panel in the sidebar, a
+brand header with live model stats, and a split work area — the session log on the left, the
+selected customer's case file on the right.
+
+![Score a customer](docs/screenshots/01-score-tab.jpeg)
 
 ### 1 · Score a customer
 
-Structured form (profile, services, contract/billing) → churn probability, risk band, drivers
-and retention actions.
+Pick a preset (fiber newcomer, DSL mid-tenure, loyal two-year, voice-only) or set the profile by
+hand, move the decision threshold, then press **Predict churn risk**. Every score is appended to
+the session log, and the case file shows the probability, band, position against the threshold,
+the signals behind the score and the retention actions to try first.
 
-| Input form | Prediction result |
+| Control panel | Case file |
 |---|---|
 | ![Form](docs/screenshots/02-customer-form.jpeg) | ![Result](docs/screenshots/03-prediction-result.jpeg) |
 
