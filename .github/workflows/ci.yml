@@ -11,12 +11,10 @@ permissions:
 
 jobs:
   smoke-test:
-    name: Artefact smoke test (Python ${{ matrix.python-version }})
+    # The pinned stack needs Python 3.12+ (numpy 2.5.x dropped 3.11), which is
+    # also the runtime Streamlit Cloud uses, so this leg mirrors production.
+    name: Artefact smoke test (Python 3.12)
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.11", "3.12"]
 
     steps:
       - name: Check out repository
@@ -25,7 +23,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version-file: .python-version
           cache: pip
 
       - name: Install dependencies
@@ -55,7 +53,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version-file: .python-version
           cache: pip
 
       - name: Install dependencies

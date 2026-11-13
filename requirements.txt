@@ -2,6 +2,7 @@
 # Versions below are pinned to the exact set the committed model artefacts were
 # built and verified against, so local runs, CI and Streamlit Cloud all resolve
 # the same wheels (see docs/DEPLOYMENT.md#troubleshooting).
+# Requires Python 3.12+ : numpy 2.5.x no longer publishes 3.11 wheels.
 pandas==3.1.1
 numpy==2.5.4
 scikit-learn==1.9.1
