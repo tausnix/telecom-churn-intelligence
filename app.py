@@ -346,7 +346,8 @@ with st.sidebar:
 
     st.markdown('<div class="side-h">Decision</div>', unsafe_allow_html=True)
     threshold = st.slider(
-        "Threshold", 0.05, 0.95, float(round(metrics["operating_threshold"], 2)), 0.005,
+        "Threshold", 0.05, 0.95, float(round(metrics["operating_threshold"], 3)), 0.005,
+        format="%.3f",
         key="threshold",
         help="Tuned on out-of-fold predictions to catch at least 80% of churners.",
     )
