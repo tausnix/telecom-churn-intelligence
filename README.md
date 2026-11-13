@@ -4,6 +4,7 @@
 reproducible scikit-learn pipeline and an interactive Streamlit app.**
 
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
+[![CI](https://github.com/tausnix/telecom-churn-intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/tausnix/telecom-churn-intelligence/actions/workflows/ci.yml)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9.1-F7931E?logo=scikitlearn&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.67.0-FF4B4B?logo=streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-0F766E)
